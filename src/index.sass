@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap')
+
+
+$bgColor: #e5e5e5
+$darkTextColor: #1D3557
+$lightTextColor: #457B9D
+$lightBg: #E4E8EA
+$letterSpacing: 0.1rem
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Roboto', sans-serif
+
+body
+  display: flex
+  justify-content: center
+  padding: 4rem
+  background-color: $lightBg
+  
+h1
+  // font-family: 'Pushster', cursive
+  font-weight: 500
+  color: $darkTextColor
+  text-align: center
+  letter-spacing: $letterSpacing
+  
+.container 
+  background-color: #ffffff
+  border-radius: 3px
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
+  width: 80vw
+  max-width: 32rem
+  padding: 1.5rem
+  display: flex
+  flex-direction: column
+  row-gap: 1.2rem
+  
+  .main-form
+    display: flex
+    flex-direction: row
+    align-items: center
+    background: $lightBg
+    
+    input
+      width: 100%
+      background: $lightBg
+      border: none
+      border-top-left-radius: 3px
+      border-bottom-left-radius: 3px
+      padding: 0.25rem 1rem
+      color: #617D98
+      letter-spacing: $letterSpacing
+      &:focus
+        outline: 1px solid #a8dadc
+      
+    button
+      text-transform: capitalize
+      padding: 0.25rem 0.75rem
+      cursor: pointer
+      background: #a8dadc
+      border: none
+      border-top-right-radius: 3px
+      border-bottom-right-radius: 3px
+      color: $darkTextColor
+      letter-spacing: $letterSpacing
+
+  .edit-form
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    input
+      border: none
+      font-size: 1rem
+      letter-spacing: $letterSpacing
+      color: #a8dadc
+      font-weight: 400
+      // padding: 0.25rem 0
+      border-radius: 3px
+      &:focus
+        outline: none
+
+
+      
+.list-container
+  display: flex
+  flex-direction: column
+  row-gap: 1rem
+  
+  .item-container
+    display: flex
+    justify-content: space-between
+    padding: 0.25rem 0.75rem
+    
+    p
+      letter-spacing: $letterSpacing
+      font-weight: 400
+      color: #003049
+      font-size: 1rem
+      
+    .item-btns
+      display: flex
+      column-gap: 0.75rem
+      
+      button
+        cursor: pointer
+        background: none
+        border: none
+        font-size: 0.75rem
+        
+      .edit-btn
+        color: #83b692
+        
+      .delete-btn
+        color: #f9627d
+        
+#reset-btn
+  align-self: center
+  text-transform: capitalize
+  color: #E66B6B
+  background: none
+  border: none
+  cursor: pointer
+  letter-spacing: $letterSpacing
+
+.modal-container
+  // background: red
+  position: fixed
+  top: 0
+  left: 50%
+  transform: translate(-50%, 0)
+  padding: 0.25rem 0.75rem 
+  border-bottom-left-radius: 3px
+  border-bottom-right-radius: 3px
+  transition-duration: 0.25s
+
+  p
+    text-transform: uppercase
+    font-size: 0.75rem
+    font-weight: 500
+    letter-spacing: $letterSpacing
+    color: #ffffff
+  
+  
